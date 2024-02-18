@@ -21,23 +21,16 @@ console.log(calcGrossPrice(40, 0.16));
 
 //Task 3 Add positive function
 
-function addPositive1(firstnumber, secondnumber) {
-  return firstnumber + secondnumber;
+function addPositive(num1, num2) {
+  num1 = Math.abs(num1);
+  num2 = Math.abs(num2);
+
+  return num1 + num2;
 }
 
-console.log(addPositive1(2, 3));
-
-//Task
-
-function addPositive2(firstnumber, secondnumber) {
-  return firstnumber + secondnumber * -1;
-}
-
-console.log(addPositive2(3, -5));
-// result2 should be 8
-
-function addPositive3(firstnumber, secondnumber) {
-  return firstnumber * -1 + secondnumber * -1;
-}
-console.log(addPositive3(-1, -8));
-// result2 should be 9
+console.log(addPositive(2, 3));
+// result should be 5
+console.log(addPositive(3, -5));
+// result should be 8
+console.log(addPositive(-1, -8));
+// result should be 9
